@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+/* CSS Generation */
+
+* {
+    margin: 10px;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* index.html (página inicial) */
+
+header {
+    height: 7em;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    }
+
+body {
+    background-image: linear-gradient(to right, #cad6db, #8fb1c7, #3c6daa);
+    }
+
+nav {
+    width: 60%;
+    }
+ 
+main {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(15, 12, 148);
+    width: 80%;
+    padding: 1.5em;
+    margin: auto;
+    }
+
+#logo {
+    border-radius: 10px;
+    border-block-start-width: 5px 5px 5px rgb(104, 100, 100);
+    width: 170px;
+    height: auto;
+    }
+
+h1 {
+    font-size: 4em;
+    text-align: center;
+    background-color: rgb(104, 104, 238);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+    }
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    }
+
+#naveg {
+    background-color: rgb(179, 210, 224);
+    font-size: 1.2em;
+    display: block;
+    text-align: center;
+    }
+
+#brasao {
+    display: flex;
+    margin: auto;
+}
+
+#fale {
+    display: grid;
+    text-align: center;
+    border: 10px;
+    box-shadow: 3px 3px 3px 3px;
+}
+
+p {
+    text-align: justify;
+    text-indent: 5em;
+    }
+
+#voltar {
+    display: block;
+    color: rgb(171, 170, 206);
+    padding: 5px 5px;
+    border-radius: 10px;
+    align-items: center;
+    font-weight: bold;
+    outline: none;
+    text-align: center;
+    font-size: 1em;
+    margin: 0 auto;
+    width: 18em;
+    height: 2em;
+    }
+
+    /* galeria.html (página imagens) */
+
+    #img {
+        display: grid;
+    text-align: center;
+    border: 10px;
+    box-shadow: 3px 3px 3px 3px;
+    }
+
+    #img1 {
+        text-align: center;
+        border: 10px;
+        font-size: 2em;
+        padding: 10px;
+        }
+
+     #img2 {
+            font-size: 50px;
+            text-align: center;
+            text-decoration: underline;
+            display: block;
+        }
+
+    #img3 {
+        display: block;
+        align-items: center;
+        margin: auto;
+    }
+    
+    #brasao_img {
+        font-size: 2em;
+        text-align: center;
+        }
+    
+    #img_brasao {
+        display: flex;
+        margin: auto;
+    }
+
+    /* index.html (página de vídeo */
+
+    #video {
+        width: 560px;
+        height: 315px;
+        display: flex;
+        text-align: center;
+        margin: 0 auto  ;
+        text-align: center;
+        border: 10px;
+        box-shadow: 3px 3px 3px 3px;
+        }
+
+    /* faleconosco.html (página fale conosco */
+
+    li {
+        font-size: 2em;
+        display: block;
+        align-items: top;
+        justify-content: top;
+        text-align: top;
+        border: #3c6daa;
+        padding: 10px;
+    }
+    
+
+    #fale {
+        display: grid;
+        text-align: center;
+        border: 10px;
+        box-shadow: 3px 3px 3px 3px;
+    }
+
+    #fale_time {
+        font-size: 2em;
+    }
