@@ -2,8 +2,15 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
-    font-size: 3em;
+table {
+    width: 500px;
+    border-collapse: collapse;
+    position: relative;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 10px;
 }
 
 caption { 
@@ -13,19 +20,15 @@ caption {
     background-color: lightgray;
 }
 
-table {
-    width: 500px;
-    border-collapse: collapse;
-}
-
-td, th {
-    border: 1px solid black;
-    padding: 10px;
-}
-
 thead, tfoot {
-    background-color: gray;
+    background-color: #383838;
     color: white
+}
+
+thead > tr > th {
+    position: sticky;
+    top: -1px;
+    background-color: #383838;
 }
 
 tbody > tr:nth-child(odd) {
@@ -39,4 +42,3 @@ tbody > tr:nth-child(even) {
 td.num {
     text-align: right;
 }
-
