@@ -9,13 +9,18 @@
 <body>
     <h1>Exercícios de Tabelas</h1>
     <table>
+        <caption>
+            Filmes Favoritos
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col" >Nomes</th>
+                <th scope="colgroup" colspan="3">Filmes</th>
+            </tr>
+        </thead>
         <tr>
-            <td class="cabecalho">Grupo</td>
-            <td class="cabecalho">Nomes</td>
-            <td class="cabecalho" colspan="3">Filmes</td>
-        </tr>
-        <tr>
-            <td class="cabecalho" rowspan="3">Mulheres</td>
+            <th scope="rowgroup" rowspan="3">Mulheres</th>
             <td>Ana Maria Santos</td>
             <td>Alien</td>
             <td>Rambo</td>
@@ -34,7 +39,7 @@
             <td>Big Hero</td>
         </tr>
         <tr>
-            <td class="cabecalho" rowspan="3">Homens</td>
+            <th scope="rowgroup" rowspan="3">Homens</th>
             <td>Bruno Mendonça</td>
             <td>Intocáveis</td>
             <td>Amnésia</td>
@@ -48,10 +53,16 @@
         </tr>
         <tr>
             <td>Fabiano Mota</td>
-            <td>Star Wars 5</td>
+            <td>Star Wars V</td>
             <td>Taxi Driver</td>
             <td>Toy Story</td>
         </tr>
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="4">Total</th>
+                <td>1000</td>
+            </tr>
+        </tfoot>
     </table>
     
 </body>
