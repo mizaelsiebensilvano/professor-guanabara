@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body {
+        font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    <p>
+        Se você for:
+        <input type="texto" name="txtnac" id="txtnac"></p>
+        <p>vivendo no Brasil</p>
+        <input type="button" value="Verificar" onclick="calcular()">
+        <div id="res"></div>
+
+    <script>
+        function calcular() {
+            var txtnac = window.document.querySelector('input#txtnac')
+            var país = 'Brasil'
+            var res = window.document.querySelector('div#res')
+                if (país === 'Brasil') {
+                    res.innerHTML += 'Você é <strong>ESTRANGEIRO!</strong>'
+                } else {
+                    res.innerHTML += 'Você é <strong>BRASILEIRO!</strong>'
+                }
+        }
+    </script>
+    
+</body>
+</html>
