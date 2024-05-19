@@ -21,13 +21,20 @@
 </head>
 <body>
     <h1>Eventos DOM - function</h1>
-    <p><strong>Utilizando o HTML para disparar os eventos</strong></p>
-    <p><strong>Utilizando os seguintes comandos: <br> </strong>onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()" </p>
-    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+    <p><strong>Utilizando o "Listener" para disparar os eventos, o HTML fica menos poluído</strong></p>
+    <p><strong>Utilizando os seguintes comandos:</strong>       <br>
+        addEventListener('click', clicar)         <br>
+        addEventListener('mouseenter', entrar)    <br>
+        addEventListener('mouseout', sair)        <br>
+</p>
+    <div id="area">
         Interaja...
     </div>
     <script>
         var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
 
         function clicar(){
             a.innerText = 'Clicou!'
