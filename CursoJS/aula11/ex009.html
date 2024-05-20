@@ -11,26 +11,25 @@
     </style>
 </head>
 <body>
-    <h1>Nacionalidade</h1>
-    <p>
-        Se você for:
-        <input type="texto" name="txtnac" id="txtnac"></p>
-        <p>vivendo no Brasil</p>
-        <input type="button" value="Verificar" onclick="calcular()">
-        <div id="res"></div>
-
+    <h2> Sua nacionalidade </h2>
+    Qual o seu país ? <input type="text" name="pais" id="pais">
+    <input type="button" value="Pesquisar" onclick="clicar()">
+    <div id="res">
+    </div>
     <script>
-        function calcular() {
-            var txtnac = window.document.querySelector('input#txtnac')
-            var país = 'Brasil'
-            var res = window.document.querySelector('div#res')
-                if (país === 'Brasil') {
-                    res.innerHTML += 'Você é <strong>ESTRANGEIRO!</strong>'
-                } else {
-                    res.innerHTML += 'Você é <strong>BRASILEIRO!</strong>'
-                }
+        function clicar(){
+            var paisp = window.document.getElementById('pais')
+            var res = window.document.getElementById('res')
+
+            var vel = String(paisp.value)
+            res.innerText = `Seu pais é ${vel}` 
+        if(vel == 'Brasil'){
+            res.innerHTML = 'Você é Brasileiro'
+        }else(
+            res.innerHTML = 'Você é estrangeiro'
+        )
+
         }
     </script>
-    
 </body>
 </html>
