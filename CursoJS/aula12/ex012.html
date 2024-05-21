@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições Aninhadas</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Condições Aninhadas</h1>
+
+    <input type="button" value="Clicar" onclick="clicar()">
+
+    <div id="res"></div>
+
+    <script>
+        function clicar() {
+            var agora = new Date()
+            var hora = agora.getHours()
+            res.innerHTML = `Agora são exatamente ${agora} horas`
+            if (hora <12) {
+                res.innerHTML = `Bom dia!`
+            } else if (hora <=18) {
+                res.innerHTML = `Boa tarde!`
+            } else {
+                res.innerHTML = `Boa noite!`
+            }
+        }
+    </script>
+    
+</body>
+</html>
