@@ -1,1 +1,3 @@
-alert('Olá')
+function verificar() {
+    window.alert('FUNCIONOU!')
+}
