@@ -1,5 +1,5 @@
 body {
-    background: rgb(70, 142, 256);
+    background: rgb(70, 142, 236);
     font: normal 15pt Arial;
 }
 
@@ -14,7 +14,7 @@ section {
     padding: 15px;
     width: 500px;
     margin: auto;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.364);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
 }
 
 div {
